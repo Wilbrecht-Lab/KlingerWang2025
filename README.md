@@ -1,9 +1,9 @@
 Run FullCa2Pipeline.ipynb to replicate the analysis
-o	1. Convert Behavioral Output File to Required Trial-by-Trial Format: this reformats behavioral data from a Matlab format to a CSV format where the rows represent individual trials
-o	2. Alignment of Ca2+ Signal and Plotting: self-explanatory; requires cell identification files from Suite2P and the behavior CSV. This section is short because a lot of the magic happens in the “required_python_code” scripts that Albert wrote.
-o	3. Multiple Linear Regression: self-explanatory; adapted from Hongli – largely Hongli’s code, with small adjustments by me
-o	4. Examining MLR Results: my code to examine the fraction of neurons that significantly encode task-related variables
-o	5. Plotting neuron activity from saved dataframes: code to generate heatmaps and line plots showing individual neuron activity for specific stimulus types
+1. Convert Behavioral Output File to Required Trial-by-Trial Format: this reformats behavioral data from a Matlab format to a CSV format where the rows represent individual trials
+2. Alignment of Ca2+ Signal and Plotting: self-explanatory; requires cell identification files from Suite2P and the behavior CSV. This section is short because a lot of the magic happens in the “required_python_code” scripts that Albert wrote.
+3. Multiple Linear Regression: self-explanatory; adapted from Hongli – largely Hongli’s code, with small adjustments by me
+4. Examining MLR Results: my code to examine the fraction of neurons that significantly encode task-related variables
+5. Plotting neuron activity from saved dataframes: code to generate heatmaps and line plots showing individual neuron activity for specific stimulus types
 
 
 Jupyter notebook “Suite2P_Analysis”:  contains code for preprocessing a single imaging session, sorting that session by activity percentiles, and plotting Ca2+ traces; plotting the imaging FOVs; and calculating mean integrated activity and cell count across multiple animals and sessions.
