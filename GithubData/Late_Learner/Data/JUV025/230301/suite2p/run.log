@@ -1,0 +1,49 @@
+
+ >>>>> started run at 05/10/2023 13:31:08{'data_path': ['Y:/Madeline/raw_imaging/JUV025/JUV025-230301-001/registered/icorre2'], 'subfolders': [], 'save_path0': 'Y:/Madeline/processed_data/Data/JUV025/230301', 'fast_disk': 'Y:/Madeline/processed_data/Data/JUV025/230301', 'input_format': 'tif'}
+tif
+** Found 29 tifs - converting to binary **
+NOTE: ScanImageTiffReader not installed, using tifffile
+4000 frames of binary, time 35.54 sec.
+8000 frames of binary, time 71.99 sec.
+12000 frames of binary, time 105.33 sec.
+16000 frames of binary, time 147.26 sec.
+20000 frames of binary, time 172.02 sec.
+24000 frames of binary, time 199.44 sec.
+28000 frames of binary, time 238.17 sec.
+time 253.59 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not running registration, ops['do_registration']=0
+binary path: Y:/Madeline/processed_data/Data/JUV025/230301\suite2p\plane0\data.bin
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2898,256,256] created in 60.12 sec.
+ROIs: 124, cost: 0.5855, time: 71.5385
+ROIs: 215, cost: 0.5343, time: 88.6452
+ROIs: 256, cost: 0.5227, time: 99.7515
+ROIs: 275, cost: 0.5189, time: 110.1141
+ROIs: 291, cost: 0.5167, time: 132.0735
+ROIs: 308, cost: 0.5145, time: 146.7197
+ROIs: 324, cost: 0.5125, time: 156.3665
+ROIs: 337, cost: 0.5112, time: 165.7017
+ROIs: 348, cost: 0.5103, time: 174.8221
+dropped ROI with no pixels
+dropped ROI with no pixels
+dropped ROI with no pixels
+ROIs: 345, cost: 0.5377, time: 203.9641
+ROIs: 345, cost: 0.5452, time: 216.7970
+ROIs: 345, cost: 0.5423, time: 224.2923
+Detected 318 ROIs, 230.41 sec
+After removing overlaps, 254 ROIs remain
+----------- Total 291.95 sec.
+----------- EXTRACTION
+Masks created, 0.50 sec.
+Extracted fluorescence from 254 ROIs in 28987 frames, 40.63 sec.
+----------- Total 42.67 sec.
+----------- CLASSIFICATION
+['skew', 'npix_norm', 'compact']
+----------- SPIKE DECONVOLUTION
+----------- Total 1.13 sec.
+Plane 0 processed in 337.02 sec (can open in GUI).
+total = 591.24 sec.
+TOTAL RUNTIME 591.24 sec

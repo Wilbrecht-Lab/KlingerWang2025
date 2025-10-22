@@ -1,0 +1,43 @@
+
+ >>>>> started run at 14/09/2023 18:55:12{'data_path': ['Y:/Madeline/raw_imaging/JUV014/JUV014-220404-gonogo-001/registered/icorre2'], 'subfolders': [], 'save_path0': 'Y:/Madeline/processed_data/Data/JUV014/220404', 'fast_disk': 'Y:/Madeline/processed_data/Data/JUV014/220404', 'input_format': 'tif'}
+tif
+** Found 29 tifs - converting to binary **
+NOTE: ScanImageTiffReader not installed, using tifffile
+4000 frames of binary, time 20.10 sec.
+8000 frames of binary, time 46.73 sec.
+12000 frames of binary, time 70.11 sec.
+16000 frames of binary, time 104.05 sec.
+20000 frames of binary, time 139.64 sec.
+24000 frames of binary, time 177.68 sec.
+28000 frames of binary, time 213.55 sec.
+time 221.46 sec. Wrote 28927 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not running registration, ops['do_registration']=0
+binary path: Y:/Madeline/processed_data/Data/JUV014/220404\suite2p\plane0\data.bin
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2892,256,256] created in 56.04 sec.
+ROIs: 158, cost: 0.7185, time: 62.8744
+ROIs: 245, cost: 0.6695, time: 75.4505
+ROIs: 281, cost: 0.6540, time: 87.8263
+ROIs: 299, cost: 0.6491, time: 97.4580
+ROIs: 315, cost: 0.6461, time: 106.9939
+ROIs: 325, cost: 0.6439, time: 116.3985
+ROIs: 325, cost: 0.5896, time: 133.0904
+ROIs: 325, cost: 0.5784, time: 142.9437
+ROIs: 325, cost: 0.5672, time: 150.2632
+Detected 314 ROIs, 157.04 sec
+After removing overlaps, 264 ROIs remain
+----------- Total 214.59 sec.
+----------- EXTRACTION
+Masks created, 0.55 sec.
+Extracted fluorescence from 264 ROIs in 28927 frames, 36.56 sec.
+----------- Total 37.63 sec.
+----------- CLASSIFICATION
+['compact', 'npix_norm', 'skew']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.78 sec.
+Plane 0 processed in 254.17 sec (can open in GUI).
+total = 476.39 sec.
+TOTAL RUNTIME 476.39 sec

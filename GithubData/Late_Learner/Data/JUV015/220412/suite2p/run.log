@@ -1,0 +1,42 @@
+
+ >>>>> started run at 21/08/2023 16:36:30{'data_path': ['Y:/Madeline/processed_data/Data/JUV015/220412', 'Y:/Madeline/raw_imaging/JUV015/JUV015-220412-gonogo-001/registered'], 'subfolders': [], 'save_path0': 'Y:/Madeline/processed_data/Data/JUV015/220412', 'fast_disk': 'Y:/Madeline/processed_data/Data/JUV015/220412', 'input_format': 'tif'}
+tif
+** Found 29 tifs - converting to binary **
+NOTE: ScanImageTiffReader not installed, using tifffile
+4000 frames of binary, time 20.15 sec.
+8000 frames of binary, time 41.51 sec.
+12000 frames of binary, time 60.07 sec.
+16000 frames of binary, time 79.37 sec.
+20000 frames of binary, time 98.27 sec.
+24000 frames of binary, time 119.57 sec.
+28000 frames of binary, time 139.27 sec.
+time 145.15 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not running registration, ops['do_registration']=0
+binary path: Y:/Madeline/processed_data/Data/JUV015/220412\suite2p\plane0\data.bin
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2898,256,256] created in 44.25 sec.
+ROIs: 156, cost: 1.1460, time: 54.5156
+ROIs: 233, cost: 1.0249, time: 64.5799
+ROIs: 264, cost: 0.9823, time: 73.3405
+ROIs: 280, cost: 0.9716, time: 81.8569
+ROIs: 292, cost: 0.9660, time: 90.6619
+ROIs: 292, cost: 0.8554, time: 105.7000
+ROIs: 292, cost: 0.8243, time: 112.2256
+ROIs: 292, cost: 0.8060, time: 117.3659
+Detected 285 ROIs, 122.88 sec
+After removing overlaps, 261 ROIs remain
+----------- Total 168.47 sec.
+----------- EXTRACTION
+Masks created, 0.51 sec.
+Extracted fluorescence from 261 ROIs in 28987 frames, 30.93 sec.
+----------- Total 31.85 sec.
+----------- CLASSIFICATION
+['npix_norm', 'skew', 'compact']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.62 sec.
+Plane 0 processed in 202.01 sec (can open in GUI).
+total = 347.57 sec.
+TOTAL RUNTIME 347.57 sec

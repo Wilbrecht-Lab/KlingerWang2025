@@ -1,0 +1,53 @@
+
+ >>>>> started run at 10/05/2022 19:51:16{'data_path': ['Z:/Madeline/processed_data/ADT010/220415', 'K:/madeline_data/merged'], 'subfolders': [], 'save_path0': 'Z:/Madeline/processed_data/ADT010/220415', 'fast_disk': 'Z:/Madeline/processed_data/ADT010/220415', 'input_format': 'tif'}
+tif
+** Found 1 tifs - converting to binary **
+4000 frames of binary, time 109.19 sec.
+8000 frames of binary, time 187.15 sec.
+12000 frames of binary, time 264.79 sec.
+16000 frames of binary, time 343.20 sec.
+20000 frames of binary, time 421.64 sec.
+24000 frames of binary, time 499.51 sec.
+28000 frames of binary, time 578.26 sec.
+time 598.51 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not registered / registration forced with ops['do_registration']>1
+      (no previous offsets to delete)
+----------- REGISTRATION
+registering 28987 frames
+Reference frame, 10.78 sec.
+Registered 4000/28987 in 211.05s
+Registered 8000/28987 in 419.36s
+Registered 12000/28987 in 631.58s
+Registered 16000/28987 in 845.78s
+Registered 20000/28987 in 1062.31s
+Registered 24000/28987 in 1277.06s
+Registered 28000/28987 in 1485.57s
+----------- Total 1555.65 sec
+Registration metrics, 90.10 sec.
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie [2850,256,256], 332.52 sec.
+ROIs: 142, cost: 0.5689, time: 50.2064
+ROIs: 185, cost: 0.5504, time: 58.6759
+ROIs: 202, cost: 0.5457, time: 66.1297
+ROIs: 209, cost: 0.5450, time: 72.8931
+ROIs: 209, cost: 0.5108, time: 85.2982
+ROIs: 209, cost: 0.5207, time: 90.9898
+ROIs: 209, cost: 0.5100, time: 95.7883
+Found 192 ROIs, 98.26 sec
+After removing overlaps, 176 ROIs remain
+Masks made in 2.47 sec.
+----------- Total 433.47 sec.
+----------- EXTRACTION
+Extracted fluorescence from 176 ROIs in 28987 frames, 341.12 sec.
+added enhanced mean image
+----------- Total 349.19 sec.
+----------- CLASSIFICATION
+----------- Total 0.17 sec.
+----------- SPIKE DECONVOLUTION
+----------- Total 0.42 sec.
+Plane 0 processed in 2437.72 sec (can open in GUI).
+total = 3038.84 sec.
+TOTAL RUNTIME 3038.84 sec

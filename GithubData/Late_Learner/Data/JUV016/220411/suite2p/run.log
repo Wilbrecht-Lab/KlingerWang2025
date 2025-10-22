@@ -1,0 +1,41 @@
+
+ >>>>> started run at 22/09/2023 17:46:42{'data_path': ['Y:/Madeline/raw_imaging/JUV016/JUV016-220411-gonogo-001/registered/icorre2'], 'subfolders': [], 'save_path0': 'Y:/Madeline/processed_data/Data/JUV016/220411', 'fast_disk': 'Y:/Madeline/processed_data/Data/JUV016/220411', 'input_format': 'tif'}
+tif
+** Found 29 tifs - converting to binary **
+NOTE: ScanImageTiffReader not installed, using tifffile
+4000 frames of binary, time 14.66 sec.
+8000 frames of binary, time 29.79 sec.
+12000 frames of binary, time 45.03 sec.
+16000 frames of binary, time 59.92 sec.
+20000 frames of binary, time 74.98 sec.
+24000 frames of binary, time 90.48 sec.
+28000 frames of binary, time 105.29 sec.
+time 109.14 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not running registration, ops['do_registration']=0
+binary path: Y:/Madeline/processed_data/Data/JUV016/220411\suite2p\plane0\data.bin
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2898,256,256] created in 46.01 sec.
+ROIs: 159, cost: 1.1519, time: 55.8459
+ROIs: 236, cost: 1.0454, time: 66.6333
+ROIs: 258, cost: 1.0198, time: 75.0930
+ROIs: 267, cost: 1.0140, time: 83.8745
+ROIs: 267, cost: 0.9207, time: 98.3100
+ROIs: 267, cost: 0.8867, time: 104.4709
+ROIs: 267, cost: 0.8777, time: 110.1649
+Detected 263 ROIs, 115.93 sec
+After removing overlaps, 250 ROIs remain
+----------- Total 163.26 sec.
+----------- EXTRACTION
+Masks created, 0.53 sec.
+Extracted fluorescence from 250 ROIs in 28987 frames, 31.78 sec.
+----------- Total 32.69 sec.
+----------- CLASSIFICATION
+['compact', 'npix_norm', 'skew']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.61 sec.
+Plane 0 processed in 197.60 sec (can open in GUI).
+total = 307.13 sec.
+TOTAL RUNTIME 307.13 sec
