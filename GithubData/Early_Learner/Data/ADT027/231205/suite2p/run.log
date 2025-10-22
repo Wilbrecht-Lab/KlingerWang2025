@@ -1,0 +1,44 @@
+
+ >>>>> started run at 02/01/2024 16:39:27{'data_path': ['Y:/Madeline/raw_imaging/ADT027/ADT027-231205-001/registered'], 'subfolders': [], 'save_path0': 'Y:/Madeline/processed_data/Data/ADT027/231205', 'fast_disk': 'Y:/Madeline/processed_data/Data/ADT027/231205', 'input_format': 'tif'}
+tif
+** Found 29 tifs - converting to binary **
+NOTE: ScanImageTiffReader not installed, using tifffile
+4000 frames of binary, time 334.32 sec.
+8000 frames of binary, time 587.75 sec.
+12000 frames of binary, time 984.95 sec.
+16000 frames of binary, time 1170.54 sec.
+20000 frames of binary, time 1285.06 sec.
+24000 frames of binary, time 1423.77 sec.
+28000 frames of binary, time 1532.09 sec.
+time 1560.51 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not running registration, ops['do_registration']=0
+binary path: Y:/Madeline/processed_data/Data/ADT027/231205\suite2p\plane0\data.bin
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2898,256,256] created in 390.75 sec.
+ROIs: 153, cost: 0.6496, time: 62.3013
+ROIs: 237, cost: 0.6080, time: 73.0883
+dropped ROI with no pixels
+ROIs: 272, cost: 0.5924, time: 83.8997
+ROIs: 288, cost: 0.5878, time: 96.7146
+ROIs: 297, cost: 0.5859, time: 109.1227
+ROIs: 297, cost: 0.5506, time: 134.1816
+ROIs: 297, cost: 0.5431, time: 144.7034
+dropped ROI with no pixels
+ROIs: 296, cost: 0.5392, time: 153.1383
+Detected 282 ROIs, 161.24 sec
+After removing overlaps, 260 ROIs remain
+----------- Total 554.12 sec.
+----------- EXTRACTION
+Masks created, 0.70 sec.
+Extracted fluorescence from 260 ROIs in 28987 frames, 132.08 sec.
+----------- Total 133.41 sec.
+----------- CLASSIFICATION
+['npix_norm', 'compact', 'skew']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.98 sec.
+Plane 0 processed in 696.47 sec (can open in GUI).
+total = 2257.61 sec.
+TOTAL RUNTIME 2257.61 sec
