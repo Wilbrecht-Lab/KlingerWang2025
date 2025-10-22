@@ -1,29 +1,55 @@
-Run FullCa2Pipeline.ipynb to replicate the analysis
-1. Convert Behavioral Output File to Required Trial-by-Trial Format: this reformats behavioral data from a Matlab format to a CSV format where the rows represent individual trials
-2. Alignment of Ca2+ Signal and Plotting: self-explanatory; requires cell identification files from Suite2P and the behavior CSV. This section is short because a lot of the magic happens in the “required_python_code” scripts that Albert wrote.
-3. Multiple Linear Regression: self-explanatory; adapted from Hongli – largely Hongli’s code, with small adjustments by me
-4. Examining MLR Results: my code to examine the fraction of neurons that significantly encode task-related variables
-5. Plotting neuron activity from saved dataframes: code to generate heatmaps and line plots showing individual neuron activity for specific stimulus types
+## Behavior and 2p Calcium Imaging Analysis Code  
+### for *Klinger, Wang et al.*, 2025  
 
+*(Link will be added upon publication)*
 
-Jupyter notebook “Suite2P_Analysis”:  contains code for preprocessing a single imaging session, sorting that session by activity percentiles, and plotting Ca2+ traces; plotting the imaging FOVs; and calculating mean integrated activity and cell count across multiple animals and sessions.
+---
 
-Jupyter notebook “Behavior_Analysis”: contains code for examine running velocity and licking behavior, and assessing the trial type statistics of each session (i.e., fraction of hit trials in each session, when miss trials occurred, etc.)
+### Instructions to Run the Code
 
-Code for preprocessing behavioral data files include:
-- get_Headfix_GoNo_EventTimes.m
-- get_session_files.m
-- gonogo_extract_behavior_data.m
-- run_for_sessions.m
+#### 1. Download the Repository
 
-Code for behavioral data analysis include:
-- behavior_pipeline_full.m
-- cumulative_cues.m
-- dprime_1session.m
-- get_behavior.m
-- remove_disengaged_trials.m
-You will also need dprime_simple.m and nansem.m, which are availabe for download from their original authors online.
+**Folder structure:**
+```
+root
+├── Analysis/               # Analysis code
+├── GithubData/             # DF/F and behavior data
+└── Master_pipeline.ipynb   # Master analysis notebook
+```
 
+---
 
-Calcium imaging time series were motion corrected with Suite2P or NormCorre and manually inspected for quality. ROIs are then identified through Suite2P.	Imaging data is aligned with behavior through the “FullCa2Pipeline.ipynb” Jupyter notebook, sections 1 and 2. The behavior must be preprocessed first. 
+#### 2. Preprocessing (Matlab)
 
+1. Add the following folder to your MATLAB path:  
+   ```
+   ~/Analysis/behavior_process_matlab/
+   ```
+
+2. Open the script:  
+   ```
+   /Analysis/behavior_process_matlab/behavior_pipeline_full.m
+   ```  
+
+   Edit the first line to specify your own path:
+   ```matlab
+   root_path = '[your_own_path]/GithubData/Late_Learner';
+   ```
+
+3. Run the script to generate the processed behavior file.
+
+4. Repeat the above step with:
+   - `Early_Learner`
+   - `Early_nonlearner`
+   - `Late_nonlearner`
+
+---
+
+#### 3. Run the Master Pipeline
+
+Open the following file in **Jupyter Notebook** to replicate the analysis from the paper:  
+```
+/Master_pipeline.ipynb
+```
+
+(see [README](./README.md) for additional details)
