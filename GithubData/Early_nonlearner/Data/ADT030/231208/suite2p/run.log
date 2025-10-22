@@ -1,0 +1,43 @@
+
+ >>>>> started run at 18/01/2024 20:22:05{'data_path': ['Y:/Madeline/raw_imaging/ADT030/ADT030-231208-001/registered/icorre2'], 'subfolders': [], 'save_path0': 'Y:/Madeline/processed_data/Data/ADT030/231208', 'fast_disk': 'Y:/Madeline/processed_data/Data/ADT030/231208', 'input_format': 'tif'}
+tif
+** Found 29 tifs - converting to binary **
+NOTE: ScanImageTiffReader not installed, using tifffile
+4000 frames of binary, time 100.63 sec.
+8000 frames of binary, time 203.11 sec.
+12000 frames of binary, time 304.55 sec.
+16000 frames of binary, time 406.08 sec.
+20000 frames of binary, time 507.38 sec.
+24000 frames of binary, time 608.74 sec.
+28000 frames of binary, time 709.69 sec.
+time 734.97 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not running registration, ops['do_registration']=0
+binary path: Y:/Madeline/processed_data/Data/ADT030/231208\suite2p\plane0\data.bin
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2898,256,256] created in 337.51 sec.
+ROIs: 142, cost: 0.6243, time: 57.6006
+ROIs: 211, cost: 0.5946, time: 68.2342
+ROIs: 238, cost: 0.5844, time: 76.8826
+ROIs: 257, cost: 0.5774, time: 84.8413
+ROIs: 266, cost: 0.5755, time: 92.8185
+ROIs: 266, cost: 0.5410, time: 108.2512
+ROIs: 266, cost: 0.5405, time: 116.3208
+dropped ROI with no pixels
+ROIs: 265, cost: 0.5345, time: 121.5949
+Detected 258 ROIs, 126.93 sec
+After removing overlaps, 246 ROIs remain
+----------- Total 465.61 sec.
+----------- EXTRACTION
+Masks created, 0.47 sec.
+Extracted fluorescence from 246 ROIs in 28987 frames, 31.98 sec.
+----------- Total 32.97 sec.
+----------- CLASSIFICATION
+['npix_norm', 'compact', 'skew']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.61 sec.
+Plane 0 processed in 506.78 sec (can open in GUI).
+total = 1242.34 sec.
+TOTAL RUNTIME 1242.34 sec

@@ -1,0 +1,73 @@
+
+ >>>>> started run at 03/03/2023 18:47:51{'data_path': ['L:/merged_tiffs/current_analysis'], 'subfolders': [], 'save_path0': 'Z:/Madeline/processed_data/JUV020/230126', 'fast_disk': 'Z:/Madeline/processed_data/JUV020/230126', 'input_format': 'tif'}
+tif
+** Found 1 tifs - converting to binary **
+4000 frames of binary, time 90.76 sec.
+8000 frames of binary, time 170.38 sec.
+12000 frames of binary, time 270.54 sec.
+16000 frames of binary, time 396.83 sec.
+20000 frames of binary, time 522.54 sec.
+24000 frames of binary, time 649.33 sec.
+28000 frames of binary, time 739.91 sec.
+time 760.34 sec. Wrote 28987 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not registered / registration forced with ops['do_registration']>1
+      (no previous offsets to delete)
+NOTE: applying default C:\Users\linda\.suite2p\classifiers\classifier_user.npy
+----------- REGISTRATION
+Reference frame, 8.38 sec.
+Registered 1000/28987 in 61.14s
+Registered 2000/28987 in 121.18s
+Registered 3000/28987 in 180.71s
+Registered 4000/28987 in 239.97s
+Registered 5000/28987 in 300.27s
+Registered 6000/28987 in 362.06s
+Registered 7000/28987 in 431.07s
+Registered 8000/28987 in 493.04s
+Registered 9000/28987 in 554.12s
+Registered 10000/28987 in 615.03s
+Registered 11000/28987 in 675.19s
+Registered 12000/28987 in 732.47s
+Registered 13000/28987 in 792.77s
+Registered 14000/28987 in 852.41s
+Registered 15000/28987 in 912.73s
+Registered 16000/28987 in 972.39s
+Registered 17000/28987 in 1032.82s
+Registered 18000/28987 in 1093.07s
+Registered 19000/28987 in 1153.49s
+Registered 20000/28987 in 1213.36s
+Registered 21000/28987 in 1273.56s
+Registered 22000/28987 in 1333.44s
+Registered 23000/28987 in 1394.23s
+Registered 24000/28987 in 1454.97s
+Registered 25000/28987 in 1515.32s
+Registered 26000/28987 in 1574.16s
+Registered 27000/28987 in 1633.53s
+Registered 28000/28987 in 1692.61s
+Registered 28987/28987 in 1749.39s
+----------- Total 1769.16 sec
+Registration metrics, 56.20 sec.
+----------- ROI DETECTION
+Binning movie in chunks of length 10
+Binned movie of size [2898,256,256] created in 190.67 sec.
+ROIs: 142, cost: 0.7222, time: 47.2065
+ROIs: 218, cost: 0.6473, time: 57.7405
+ROIs: 251, cost: 0.6248, time: 66.2085
+ROIs: 260, cost: 0.6204, time: 73.6457
+ROIs: 260, cost: 0.5929, time: 85.3521
+ROIs: 260, cost: 0.5706, time: 90.7898
+ROIs: 260, cost: 0.5656, time: 95.1703
+Detected 258 ROIs, 98.78 sec
+After removing overlaps, 238 ROIs remain
+----------- Total 290.63 sec.
+----------- EXTRACTION
+Masks created, 0.41 sec.
+Extracted fluorescence from 238 ROIs in 28987 frames, 144.96 sec.
+----------- Total 149.96 sec.
+----------- CLASSIFICATION
+['npix_norm', 'compact', 'skew']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.56 sec.
+Plane 0 processed in 2279.73 sec (can open in GUI).
+total = 3045.70 sec.
+TOTAL RUNTIME 3045.70 sec
